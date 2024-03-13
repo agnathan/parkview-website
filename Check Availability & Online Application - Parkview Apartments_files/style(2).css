@@ -1,0 +1,14 @@
+/*
+Theme Name: Nectar Child Theme
+Theme URI: https://www.apartmentsites.com/
+Author: TourVista
+Author URI: https://www.apartmentsites.com/
+Description: Modern theme from TourVista
+Template: nectar
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: nectar
+*/
+/* Nectar & Maverick */
+#text_bubble { background:#52c7e8; color:#fff; }
+#text_bubble:hover { background:#fff; color:#52c7e8; }

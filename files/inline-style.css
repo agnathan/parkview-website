@@ -1,0 +1,288 @@
+.ifp_wrapper.loading {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    display: block !important;
+}
+.ifp_wrapper.loading:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff url(//www.tourvista.com/images/ajax-loader3.gif) no-repeat center;
+}
+.ifp_wrapper.loading * {
+    display: none;
+}
+.ifp_fp {
+    width: 60%;
+    max-width: 420px;
+    min-width: 250px;
+    margin-right: 4em;
+    float: left;
+}
+.ifp_details {
+    overflow: hidden;
+}
+.ifp_next_prev {
+    position: absolute;
+    right: .5em;
+    bottom: .5em;
+}
+.ifp_enlarge {
+    position: absolute;
+    left: .5em;
+    bottom: .5em;
+}
+.ifp_enlarge a, .ifp_next_prev a {
+    padding: 10px 12px;
+    float: left;
+    border: 1px solid #c1c1c1;
+    box-shadow: inset 0 0 1px #f9f9f9;
+    background: #ddd;
+    background: -moz-linear-gradient(top,  #eee 0%, #ddd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eee), color-stop(100%,#ddd));
+    background: -webkit-linear-gradient(top,  #eee 0%,#ddd 100%);
+    background: -o-linear-gradient(top,  #eee 0%,#ddd 100%);
+    background: -ms-linear-gradient(top,  #eee 0%,#ddd 100%);
+    background: linear-gradient(to bottom,  #eee 0%,#ddd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee', endColorstr='#ddd',GradientType=0 );
+}
+.ifp_enlarge a {
+    border-radius: 5px;
+    padding: 5px 7px;
+    color: #686868;
+}
+.ifp_next_prev a:first-child {
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.ifp_enlarge a:before { content: url(../v2/images/zoom_in.png); }
+.ifp_next_prev a:first-child:before { content: url(../v2/images/previous.png); }
+.ifp_next_prev a:last-child:before { content: url(../v2/images/next.png); }
+.ifp_next_prev a:last-child { border-radius: 0 3px 3px 0; }
+.ifp_enlarge a:hover, .ifp_next_prev a:hover {
+    opacity: .8;
+    text-decoration: none;
+}
+
+.ifp_tabber {
+    border-bottom: 1px solid #c7c7c7;
+    height: 2.7em;
+}
+.ifp_tabber a {
+    color: #686868;
+    background: #ececec;
+    background: -moz-linear-gradient(top,  #f8f8f8 0%, #ececec 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#ececec));
+    background: -webkit-linear-gradient(top,  #f8f8f8 0%,#ececec 100%);
+    background: -o-linear-gradient(top,  #f8f8f8 0%,#ececec 100%);
+    background: -ms-linear-gradient(top,  #f8f8f8 0%,#ececec 100%);
+    background: linear-gradient(to bottom,  #f8f8f8 0%,#ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#ececec',GradientType=0 );
+    box-shadow: inset 0 0 1px #fcfcfc;
+    border: 1px solid #c7c7c7;
+    border-bottom-width: 0;
+    border-radius: 3px 3px 0 0;
+    margin: 0 0 0 3px;
+    padding: .6em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    max-width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ifp_tabber a:hover  {
+    cursor: pointer;
+    color: #333;
+    background: #cfcfcf;
+    background: -moz-linear-gradient(top,  #dcdcdc 0%, #cfcfcf 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(100%,#cfcfcf));
+    background: -webkit-linear-gradient(top,  #dcdcdc 0%,#cfcfcf 100%);
+    background: -o-linear-gradient(top,  #dcdcdc 0%,#cfcfcf 100%);
+    background: -ms-linear-gradient(top,  #dcdcdc 0%,#cfcfcf 100%);
+    background: linear-gradient(to bottom,  #dcdcdc 0%,#cfcfcf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#cfcfcf',GradientType=0 );
+}
+.ifp_tabber a.active {
+    color: #333;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+.ifp_fp_wrapper { position: relative; }
+.ifp_fp_container {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    padding: .5em 0;
+}
+.ifp_alert_msg {
+	background: #fc6;
+	border: 1px solid #aaa;
+	color: #333;
+	padding: 3px;
+	position: absolute;
+    left: 1px;
+    right: 1px;
+    text-align: center;
+    font-size: 11px;
+    z-index: 100;
+}
+.ifp_no_plan {
+    display: none;
+    z-index: 101;
+}
+.ifp_arrow {
+	position: absolute;
+    width: 20px;
+    height: 20px;
+	background-repeat: no-repeat;
+}
+.ifp_photo {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 102;
+    background: #fff;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    display: none;
+    max-width: 85%;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.ifp_photo:before, .ifp_photo:after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: 50%;
+    left: -11px;
+    margin-top: -12px;
+    border-right: 12px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 0;
+}
+.ifp_photo:before {
+    border-right-color: #c7c7c7;
+    left: -12px;
+}
+.ifp_photo img, .ifp_plan_tab img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+.ifp_caption_container {
+    margin-top: 5px;
+}
+.ifp_plan_tab {
+    height: auto;
+    position: relative;
+    margin: 1em auto;
+    max-width: 100%;
+}
+.ifp_clear { clear: both; }
+.fancybox-content { height: calc(80% - 88px); }
+.fancybox-cta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: all;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    color: #ddd;
+    font: 13px Helvetica Neue,Helvetica,Arial,sans-serif;
+    background: rgba(30,30,30,.6);
+    padding-right: 10px;
+}
+.fancybox-cta .button {
+    margin: 0 10px;
+    line-height: 1.5;
+}
+.fancybox-cta .fancybox-caption {
+    border-top: 0;
+}
+
+.fancybox-buttons .sharrre { display: inline-block; position: relative; padding-top: 8px; background: rgba(30,30,30,.6); height: 36px; }
+.fancybox-buttons .sharrre a { display: inline-block; position: relative; color: #f5f5f5; padding: 3px 5px; padding-left: 25px; border-radius: 5px; margin: 0 5px; font-size: 12px; line-height: 1.7; text-decoration: none; }
+.fancybox-buttons .sharrre a:hover { text-decoration: none; opacity: .8; }
+.fancybox-buttons .sharrre a:before { content: ""; position: absolute; top: 7px; left: 7px; width: 12px; height: 12px; background: url(https://www.tourvista.com/player/v2/images/social_icons.png) no-repeat 0 0; }
+.fancybox-buttons .sharrre a.sharrre_facebook { background-color: #3b5998; }
+.fancybox-buttons .sharrre a.sharrre_twitter { background-color: #55acee; }
+.fancybox-buttons .sharrre a.sharrre_googleplus { background-color: #dd4b39; }
+.fancybox-buttons .sharrre a.sharrre_twitter:before { width: 15px; background-position: -12px 0; }
+.fancybox-buttons .sharrre a.sharrre_googleplus:before { width: 13px; background-position: -27px 0; }
+
+a:focus { outline: 0; }
+#wpadminbar { z-index: 99990 !important; }
+
+@media screen and (max-width: 900px) {
+    .ifp_photo { max-width: 80%; }
+}
+@media screen and (max-width: 850px) {
+    .ifp_photo { max-width: 72%; }
+}
+@media screen and (max-width: 800px) {
+    .ifp_enlarge { display: none; }
+    .ifp_photo { max-width: 60%; }
+}
+@media screen and (max-width: 640px) {
+    .ifp_photo:before, .ifp_photo:after, .ifp_caption, .sharrre { display: none; }
+    .ifp_photo { max-width: 100%; }
+    .ifp_fp {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .fancybox-buttons .sharrre a {
+        text-indent: -999px;
+        padding-left: 22px;
+        margin: 0 2px;
+    }
+    .fancybox-cta {
+        display: block;
+        height: auto;
+        padding-top: 5px;
+        right: 0;
+    }
+    .fancybox-cta .fancybox-caption {
+        padding: 3px 10px;
+        display: inline-block;
+    }
+    .fancybox-button--close {
+        width: 30px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .fancybox-cta .fancybox-caption {
+        display: block;
+    }
+    .fancybox-content {
+        margin-top: 65px;
+        height: calc(100% - 65px);
+    }
+}
+@media screen and (max-width: 640px), (max-height: 480px) {
+    .fancybox-content {
+        height: calc(100% - 44px);
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .fancybox-cta.span { display: none; }
+}

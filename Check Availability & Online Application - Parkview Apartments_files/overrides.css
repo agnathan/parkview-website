@@ -1,0 +1,52 @@
+/* Generl Overrides */
+
+#imageContainer {
+	position: relative;
+	height: 100%;
+}
+
+#imageDataContainer {
+	position: relative;
+}
+
+#imageData {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 10px 8px;
+}
+
+#imageData #imageDetails {
+	margin-bottom: 0;
+}
+
+#imageData #bottomNav #bottomNavClose {
+	margin-bottom: 0;
+}
+
+
+/* Overrides for mobile styling */ 
+#prevLink.touch-device,
+#nextLink.touch-device {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 40px;
+	width: 40px;
+	float: none;
+}
+
+#prevLink.touch-device {
+	left: 0;
+	background: url(./images/prev.gif) center center no-repeat;
+}
+
+#nextLink.touch-device {
+	right: 0;
+	background: url(./images/next.gif) center center no-repeat;
+}
+
+#imageDataContainer {
+	position: relative;
+	z-index: 20px;
+}

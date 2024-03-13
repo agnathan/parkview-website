@@ -1,0 +1,131 @@
+(function($) {
+    $.fn.textPopup = function() {
+        var popup_text = $(this),
+            bubble = $('#text_bubble'),
+            doc = $(document),
+            page = $('body'),
+            iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream,
+            hash = window.location.hash,
+            formId = popup_text.find('form').attr('id').substr(6),
+            e = document.createEvent('Event'),
+            elem = this[0];
+
+        // define the event name for page changes
+        e.initEvent('pagechanged', true, true);
+
+        /* not currently in use, see book.js for example usage
+        // listen for page changes
+        elem.addEventListener('pagechanged', function() {
+            var p = popup_text.find('.page:visible');
+            if (p.hasClass('page-one')) {
+
+            } else if (p.hasClass('page-two')) {
+
+            }
+        }, false);*/
+
+        // open the lightbox depending on the hash of the page
+        if (hash == '#text-us') {
+            showPopup();
+        }
+
+        // bind clicks on elements with class text-us or link to #text-us
+        $(document).on('click', '.text-us, a[href*="#text-us"]', showPopup);
+
+        // fire goal on gform submission
+        $(document).bind('gform_confirmation_loaded', function(event, id) {
+            if (id == formId) {
+                next();
+                if (typeof window.gtag !== 'undefined') {
+                    gtag('event', 'page_view', {
+                        'page_location': '/text-us/?confirm'
+                    });
+                }
+            }
+        });
+
+        // bind popup navigation events
+        popup_text.find('.close').click(function() {
+            if (iOS) {
+                var offset = parseInt(document.body.style.top, 10);
+                page.removeClass('lightbox-opened');
+                doc.scrollTop(offset * -1);
+            }
+            popup_text.fadeOut(500);
+            if (window.popup_text.bubble.show) {
+                bubble.css({
+                    right: window.popup_text.bubble.right,
+                    bottom: window.popup_text.bubble.bottom,
+                    left: window.popup_text.bubble.left
+                });
+                $(window).off('resize', positionBubble);
+            }
+        });
+
+        // bubble
+        if (window.popup_text.bubble.show) {
+            // show it
+            bubble.css({
+                right: window.popup_text.bubble.right,
+                bottom: -120,
+                left: window.popup_text.bubble.left
+            }).show();
+            setTimeout(function() {
+                bubble.css({
+                    bottom: window.popup_text.bubble.bottom
+                });
+            }, 1000);
+
+            // bind click events
+            bubble.click(function() {
+                bubble.hide();
+                showPopup();
+            });
+        }
+
+        // helper functions
+        function showPopup() {
+            if (iOS) {
+                var offset = doc.scrollTop();
+                document.body.style.top = (offset * -1) + 'px';
+                page.addClass('lightbox-opened');
+            }
+            popup_text.fadeIn(500, function() {
+                if (window.popup_text.bubble.show) {
+                    positionBubble();
+                    bubble.show();
+                    $(window).resize(positionBubble);
+                }
+            });
+            if (typeof window.gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    'page_location': '/text-us/?open'
+                });
+            }
+            elem.dispatchEvent(e);
+        }
+        
+        function next() {
+            var current = popup_text.find('.page:visible');
+            current.next().show();
+            current.hide();
+            elem.dispatchEvent(e);
+            return false;
+        }
+        
+        // position the bubble behind the popup
+        function positionBubble() {
+            var offsetLeft = popup_text.find('.outer_box').position().left,
+                offsetTop = popup_text.find('.outer_box').position().top,
+                width = popup_text.find('.outer_box').width(),
+                height = popup_text.find('.outer_box').height();
+            bubble.css({
+                right: window.popup_text.bubble.right == 'auto' ? 'auto' : offsetLeft + 10,
+                bottom: offsetTop + height - 60,
+                left: window.popup_text.bubble.left == 'auto' ? 'auto' : offsetLeft + width - 60
+            });
+        }
+
+        return this;
+    };
+})(jQuery);

@@ -1,0 +1,52 @@
+if (!window.tvIfpInit) {
+    var fb = document.createElement('link');
+    fb.rel = 'stylesheet';
+    fb.href = template_directory_uri + '/css/jquery.fancybox.min.css';
+    document.body.appendChild(fb);
+
+    var style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = '//www.tourvista.com/player/ap/inline-style.css';
+    document.body.appendChild(style);
+
+    jQuery(document).ready(function($) {
+        $.getScript(template_directory_uri + '/js/jquery.sharrre.min.js').done(function() {
+            $.getScript(template_directory_uri + '/js/jquery.fancybox.min.js').done(function() {
+                $('[data-fancybox]').fancybox({
+                    slideShow: false,
+                    thumbs: false,
+                    iframe: {
+                        scrolling: 'auto'
+                    },
+                    caption: function() {
+                		return $(this).data('caption') || '';
+                	},
+                    beforeLoad: function(instance, current) {
+                        $(".sharrre:visible").sharrre({
+                            share: {
+                                facebook: true,
+                                twitter: true,
+                                googlePlus: true,
+                            },
+                            template: '<a href="#" class="sharrre_facebook">Share</a><a href="#" class="sharrre_twitter">Tweet</a><a href="#" class="sharrre_googleplus">Share</a>',
+                            render: function(api, options) {
+                                $(api.element).on("click", ".sharrre_facebook", function() { api.options.url = document.location.href; api.openPopup("facebook"); });
+                                $(api.element).on("click", ".sharrre_twitter", function() { api.options.url = document.location.href; api.openPopup("twitter"); });
+                                $(api.element).on("click", ".sharrre_googleplus", function() { api.options.url = document.location.href; api.openPopup("googlePlus"); });
+                            },
+                            enableHover: false,
+                            enableTracking: false,
+                            urlCurl: ""
+                        });
+                    }
+                });
+                $('.ifp_thumb').on('click', function() {
+                    $('[data-fancybox="ifp"]').eq($('.ifp_thumb').index($(this))).trigger('click');
+                    return false;
+                });
+            });
+        });
+    });
+
+    window.tvIfpInit = true;
+}

@@ -1,0 +1,154 @@
+// Passive event listeners
+jQuery.event.special.touchstart = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+jQuery.event.special.touchmove = {
+    setup: function( _, ns, handle ) {
+        this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+    }
+};
+
+jQuery(document).ready(function($) {
+    
+    /*gform.addFilter( 'gform_datepicker_options_pre_init', function( optionsObj, formId, fieldId ) {
+        // do stuff
+        jQuery("#input_1_7").datepicker().focus(function() {
+            jQuery(".ui-datepicker-prev, .ui-datepicker-next").attr("href", "https://www.google.com/");
+        });
+        jQuery('input[name="date"]').datepicker().focus(function() {
+            jQuery(".ui-datepicker-prev, .ui-datepicker-next").attr("href", "https://www.google.com/");
+        });
+        return optionsObj;
+    } );*/
+    
+    $("div.gallery > figure.gallery-item > div.gallery-icon > a").attr("aria-label","Photo Gallery");
+    
+    // close hamburger menu when anything but the toggle button is clicked
+    $(document).on('click', function(e) {
+        if (!$(e.target).hasClass('menu-toggle') && $('.menu-toggle').attr('aria-expanded') == 'true') {
+            $('.menu-toggle').click();
+        }
+    });
+    // smooth scroll
+    $(document).on('click', 'a[href*="#"]', function(e) {
+        var offset = window.innerWidth > 1000 ? 4 * 18 : 3 * 16;
+        offset += $('#wpadminbar').length ? $('#wpadminbar').height() : 0;
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            if (this.hash) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    if ($('html').hasClass('fancybox-enabled')) {
+                        $.fancybox.close();
+                    }
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - offset
+                    }, 500, function() {
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(':focus')) {
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1');
+                            $target.focus();
+                        };
+                    });
+                }
+            } else {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);
+                focus();
+            }
+        }
+    });
+    
+    // shrinking header
+    toShrinkOrNotToShrink();
+    $(window).on('resize', toShrinkOrNotToShrink);
+    // for safari fixes
+    if (!!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/) && navigator.userAgent.indexOf('Mobile') !== -1) {
+        $('body').addClass('mobile-safari');
+    }
+    
+    $('.toggle-nav').click(function(e) {
+        $('#site-navigation ul').slideToggle(500);
+        e.preventDefault();
+    });
+
+});
+
+function toShrinkOrNotToShrink() {
+    var $window = jQuery(window),
+        $toTop = jQuery('#to-top');
+
+    // header and back to top
+    if (window.innerWidth > 1000) {
+        $window.on('scroll', shrinkHeader);
+        if ($toTop.length) {
+            $window.on('scroll', showToTop);
+        }
+    } else {
+        if (jQuery('body').hasClass('home')) {
+            $window.on('scroll', shrinkHeader);
+        } else {
+            $window.off('scroll', shrinkHeader);
+        }
+        if ($toTop.length) {
+            $window.off('scroll', showToTop);
+            $toTop.removeClass('bottom');
+        }
+    }
+    // header for WP Admin Bar on mobile
+    if (jQuery('#wpadminbar').length) {
+        if (window.innerWidth < 600) {
+            $window.on('scroll', dealWithWp);
+        } else {
+            $window.off('scroll', dealWithWp);
+            jQuery('#masthead').css('top', 'initial');
+        }
+    }
+}
+function dealWithWp() {
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+        shrinkOn = 46,
+        $el = jQuery('#masthead');
+    $el.css('top', Math.max(0, shrinkOn - distanceY));
+}
+function shrinkHeader() {
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+        shrinkOn = 90,
+        $el = jQuery('#masthead');
+    if (distanceY > shrinkOn) {
+        $el.addClass('smaller');
+    } else {
+        $el.removeClass('smaller');
+    }
+}
+function showToTop() {
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+        shrinkOn = window.innerHeight / 2,
+        $el = jQuery('#to-top');
+    if (distanceY > shrinkOn) {
+        $el.addClass('bottom');
+    } else {
+        $el.removeClass('bottom');
+    }
+}
+function openKnock() {
+    if (knockDoorway.isLoaded) {
+        knockDoorway.openHome();
+    } else {
+        var interval = setInterval(function() {
+            if (knockDoorway.isLoaded) {
+                knockDoorway.openHome();
+                clearInterval(interval);
+            }
+        }, 250);
+    }
+    return false;
+}
