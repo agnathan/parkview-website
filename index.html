@@ -4,111 +4,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async=""
-      src="./files/analytics.js.download"
-    ></script>
-    <script
-      async=""
-      src="./files/js"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-3FPS2ENZN7");
-    </script>
-
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var gform;
-      gform ||
-        (document.addEventListener("gform_main_scripts_loaded", function () {
-          gform.scriptsLoaded = !0;
-        }),
-        window.addEventListener("DOMContentLoaded", function () {
-          gform.domLoaded = !0;
-        }),
-        (gform = {
-          domLoaded: !1,
-          scriptsLoaded: !1,
-          initializeOnLoaded: function (o) {
-            gform.domLoaded && gform.scriptsLoaded
-              ? o()
-              : !gform.domLoaded && gform.scriptsLoaded
-              ? window.addEventListener("DOMContentLoaded", o)
-              : document.addEventListener("gform_main_scripts_loaded", o);
-          },
-          hooks: { action: {}, filter: {} },
-          addAction: function (o, n, r, t) {
-            gform.addHook("action", o, n, r, t);
-          },
-          addFilter: function (o, n, r, t) {
-            gform.addHook("filter", o, n, r, t);
-          },
-          doAction: function (o) {
-            gform.doHook("action", o, arguments);
-          },
-          applyFilters: function (o) {
-            return gform.doHook("filter", o, arguments);
-          },
-          removeAction: function (o, n) {
-            gform.removeHook("action", o, n);
-          },
-          removeFilter: function (o, n, r) {
-            gform.removeHook("filter", o, n, r);
-          },
-          addHook: function (o, n, r, t, i) {
-            null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
-            var e = gform.hooks[o][n];
-            null == i && (i = n + "_" + e.length),
-              gform.hooks[o][n].push({
-                tag: i,
-                callable: r,
-                priority: (t = null == t ? 10 : t),
-              });
-          },
-          doHook: function (n, o, r) {
-            var t;
-            if (
-              ((r = Array.prototype.slice.call(r, 1)),
-              null != gform.hooks[n][o] &&
-                ((o = gform.hooks[n][o]).sort(function (o, n) {
-                  return o.priority - n.priority;
-                }),
-                o.forEach(function (o) {
-                  "function" != typeof (t = o.callable) && (t = window[t]),
-                    "action" == n
-                      ? t.apply(null, r)
-                      : (r[0] = t.apply(null, r));
-                })),
-              "filter" == n)
-            )
-              return r[0];
-          },
-          removeHook: function (o, n, t, i) {
-            var r;
-            null != gform.hooks[o][n] &&
-              ((r = (r = gform.hooks[o][n]).filter(function (o, n, r) {
-                return !!(
-                  (null != i && i != o.tag) ||
-                  (null != t && t != o.priority)
-                );
-              })),
-              (gform.hooks[o][n] = r));
-          },
-        }));
-      /* ]]> */
-    </script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link
       rel="shortcut icon"
-      href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-favicon.png"
+      href="./files/Parkview-Apartments-favicon.png"
     />
     <meta
       name="robots"
@@ -138,79 +38,7 @@
       content="2024-03-13T17:34:40+00:00"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json" class="yoast-schema-graph">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebPage",
-            "@id": "https://www.parkviewlincoln.com/",
-            "url": "https://www.parkviewlincoln.com/",
-            "name": "Parkview Apartments in Lincoln, NE (Official Site)",
-            "isPartOf": { "@id": "https://www.parkviewlincoln.com/#website" },
-            "about": { "@id": "https://www.parkviewlincoln.com/#organization" },
-            "datePublished": "2018-08-21T16:00:00+00:00",
-            "dateModified": "2022-03-22T17:34:40+00:00",
-            "description": "Parkview Apartments offers 1 and 2 bedroom homes with fully-equipped kitchens including a dishwasher & pre-wired for DirectTV.",
-            "breadcrumb": {
-              "@id": "https://www.parkviewlincoln.com/#breadcrumb"
-            },
-            "inLanguage": "en-US",
-            "potentialAction": [
-              {
-                "@type": "ReadAction",
-                "target": ["https://www.parkviewlincoln.com/"]
-              }
-            ]
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://www.parkviewlincoln.com/#breadcrumb",
-            "itemListElement": []
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://www.parkviewlincoln.com/#website",
-            "url": "https://www.parkviewlincoln.com/",
-            "name": "Parkview Apartments",
-            "description": "Apartments for Rent in Lincoln, NE",
-            "publisher": {
-              "@id": "https://www.parkviewlincoln.com/#organization"
-            },
-            "potentialAction": [
-              {
-                "@type": "SearchAction",
-                "target": {
-                  "@type": "EntryPoint",
-                  "urlTemplate": "https://www.parkviewlincoln.com/?s={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-              }
-            ],
-            "inLanguage": "en-US"
-          },
-          {
-            "@type": "Organization",
-            "@id": "https://www.parkviewlincoln.com/#organization",
-            "name": "Parkview Apartments",
-            "url": "https://www.parkviewlincoln.com/",
-            "logo": {
-              "@type": "ImageObject",
-              "inLanguage": "en-US",
-              "@id": "https://www.parkviewlincoln.com/#/schema/logo/image/",
-              "url": "https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo.png",
-              "contentUrl": "https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo.png",
-              "width": 455,
-              "height": 255,
-              "caption": "Parkview Apartments"
-            },
-            "image": {
-              "@id": "https://www.parkviewlincoln.com/#/schema/logo/image/"
-            }
-          }
-        ]
-      }
-    </script>
+
 
     <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/" />
 
@@ -969,96 +797,8 @@
       src="./files/splide.min.js.download"
       id="splide-js-js"
     ></script>
-    <link
-      rel="https://api.w.org/"
-      href="https://www.parkviewlincoln.com/wp-json/"
-    />
-    <link
-      rel="alternate"
-      type="application/json"
-      href="https://www.parkviewlincoln.com/wp-json/wp/v2/pages/2"
-    />
-    <link
-      rel="EditURI"
-      type="application/rsd+xml"
-      title="RSD"
-      href="https://www.parkviewlincoln.com/xmlrpc.php?rsd"
-    />
-    <link rel="shortlink" href="https://www.parkviewlincoln.com/" />
-    <link
-      rel="alternate"
-      type="application/json+oembed"
-      href="https://www.parkviewlincoln.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.parkviewlincoln.com%2F"
-    />
-    <link
-      rel="alternate"
-      type="text/xml+oembed"
-      href="https://www.parkviewlincoln.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.parkviewlincoln.com%2F&amp;format=xml"
-    />
     <style></style>
 
-    <script type="application/ld+json">
-      {
-        "@context": "http:\/\/schema.org",
-        "@type": "ApartmentComplex",
-        "name": "Parkview Apartments",
-        "description": "Parkview Apartments offers 1 and 2 bedroom homes with fully-equipped kitchens including a dishwasher & pre-wired for DirectTV.",
-        "url": "https:\/\/www.parkviewlincoln.com",
-        "telephone": "(402) 617-1740",
-        "faxNumber": "",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Lincoln",
-          "addressRegion": "NE",
-          "postalCode": "68521",
-          "streetAddress": "2521 N 9th St"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "40.8387063559322",
-          "longitude": "-96.70888649152543"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "http:\/\/schema.org\/Monday",
-            "opens": "08:00:00",
-            "closes": "17:00:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "http:\/\/schema.org\/Tuesday",
-            "opens": "08:00:00",
-            "closes": "17:00:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "http:\/\/schema.org\/Wednesday",
-            "opens": "08:00:00",
-            "closes": "17:00:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "http:\/\/schema.org\/Thursday",
-            "opens": "08:00:00",
-            "closes": "17:00:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "http:\/\/schema.org\/Friday",
-            "opens": "08:00:00",
-            "closes": "17:00:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "http:\/\/schema.org\/Saturday",
-            "opens": "10:00:00",
-            "closes": "14:00:00"
-          }
-        ],
-        "hasMap": "https:\/\/www.parkviewlincoln.com\/driving-directions\/"
-      }
-    </script>
     <script>
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
@@ -1336,13 +1076,13 @@
               src="./files/Parkview-Apartments-logo-300x168.png"
               width="300"
               height="168"
-              data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo-300x168.png"
+              data-lazy-src="./files/Parkview-Apartments-logo-300x168.png"
               data-ll-status="loaded"
               class="entered lazyloaded"
             /><noscript
               ><img
                 alt="Parkview Apartments"
-                src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo-300x168.png"
+                src="./files/Parkview-Apartments-logo-300x168.png"
                 width="300"
                 height="168"
             /></noscript> </a
@@ -1366,7 +1106,7 @@
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-26"
               >
                 <a
-                  href="https://www.parkviewlincoln.com/#floorplans"
+                  href="#floorplans"
                   aria-label="Floor Plans"
                   >Floor Plans</a
                 >
@@ -1376,7 +1116,7 @@
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-27"
               >
                 <a
-                  href="https://www.parkviewlincoln.com/#photos"
+                  href="#photos"
                   aria-label="Photos"
                   >Photos</a
                 >
@@ -1385,7 +1125,7 @@
                 id="menu-item-28"
                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-28"
               >
-                <a href="https://www.parkviewlincoln.com/#map" aria-label="Map"
+                <a href="#map" aria-label="Map"
                   >Map</a
                 >
               </li>
@@ -1503,34 +1243,34 @@
                         class="attachment-full size-full entered lazyloaded"
                         alt="Parkview Apartments slide"
                         decoding="async"
-                        data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide.jpg 1600w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-300x131.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-1024x448.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-768x336.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-1536x672.jpg 1536w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-480x210.jpg 480w"
+                        data-lazy-srcset="./files/slide.jpg 1600w, ./files/slide-300x131.jpg 300w, ./files/slide-1024x448.jpg 1024w, ./files/slide-768x336.jpg 768w, ./files/slide-1536x672.jpg 1536w, ./files/slide-480x210.jpg 480w"
                         data-lazy-sizes="(max-width: 1600px) 100vw, 1600px"
-                        data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide.jpg"
+                        data-lazy-src="./files/slide.jpg"
                         data-ll-status="loaded"
                         sizes="(max-width: 1600px) 100vw, 1600px"
                         srcset="
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide.jpg          1600w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-300x131.jpg   300w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-1024x448.jpg 1024w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-768x336.jpg   768w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-1536x672.jpg 1536w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-480x210.jpg   480w
+                          ./files/slide.jpg          1600w,
+                          ./files/slide-300x131.jpg   300w,
+                          ./files/slide-1024x448.jpg 1024w,
+                          ./files/slide-768x336.jpg   768w,
+                          ./files/slide-1536x672.jpg 1536w,
+                          ./files/slide-480x210.jpg   480w
                         "
                       /><noscript
                         ><img
                           width="1600"
                           height="700"
-                          src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide.jpg"
+                          src="./files/slide.jpg"
                           class="attachment-full size-full"
                           alt="Parkview Apartments slide"
                           decoding="async"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide.jpg          1600w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-300x131.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-1024x448.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-768x336.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-1536x672.jpg 1536w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/slide-480x210.jpg   480w
+                            ./files/slide.jpg          1600w,
+                            ./files/slide-300x131.jpg   300w,
+                            ./files/slide-1024x448.jpg 1024w,
+                            ./files/slide-768x336.jpg   768w,
+                            ./files/slide-1536x672.jpg 1536w,
+                            ./files/slide-480x210.jpg   480w
                           "
                           sizes="(max-width: 1600px) 100vw, 1600px"
                       /></noscript>
@@ -1547,26 +1287,26 @@
                     class="attachment-medium size-medium entered lazyloaded"
                     alt="Parkview Apartments logo"
                     decoding="async"
-                    data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo-300x168.png 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo.png 455w"
+                    data-lazy-srcset="./files/Parkview-Apartments-logo-300x168.png 300w, ./files/Parkview-Apartments-logo.png 455w"
                     data-lazy-sizes="(max-width: 300px) 100vw, 300px"
-                    data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo-300x168.png"
+                    data-lazy-src="./files/Parkview-Apartments-logo-300x168.png"
                     data-ll-status="loaded"
                     sizes="(max-width: 300px) 100vw, 300px"
                     srcset="
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo-300x168.png 300w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo.png         455w
+                      ./files/Parkview-Apartments-logo-300x168.png 300w,
+                      ./files/Parkview-Apartments-logo.png         455w
                     "
                   /><noscript
                     ><img
                       width="300"
                       height="168"
-                      src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo-300x168.png"
+                      src="./files/Parkview-Apartments-logo-300x168.png"
                       class="attachment-medium size-medium"
                       alt="Parkview Apartments logo"
                       decoding="async"
                       srcset="
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo-300x168.png 300w,
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview-Apartments-logo.png         455w
+                        ./files/Parkview-Apartments-logo-300x168.png 300w,
+                        ./files/Parkview-Apartments-logo.png         455w
                       "
                       sizes="(max-width: 300px) 100vw, 300px"
                   /></noscript>
@@ -1692,32 +1432,32 @@
                         class="attachment-large size-large entered lazyloaded"
                         alt="Large Living Room"
                         decoding="async"
-                        data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room.jpg 1200w"
+                        data-lazy-srcset="./files/living-room-1024x683.jpg 1024w, ./files/living-room-300x200.jpg 300w, ./files/living-room-768x512.jpg 768w, ./files/living-room-480x320.jpg 480w, ./files/living-room.jpg 1200w"
                         data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
-                        data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg"
+                        data-lazy-src="./files/living-room-1024x683.jpg"
                         data-ll-status="loaded"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         srcset="
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg 1024w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-300x200.jpg   300w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-768x512.jpg   768w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg   480w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room.jpg          1200w
+                          ./files/living-room-1024x683.jpg 1024w,
+                          ./files/living-room-300x200.jpg   300w,
+                          ./files/living-room-768x512.jpg   768w,
+                          ./files/living-room-480x320.jpg   480w,
+                          ./files/living-room.jpg          1200w
                         "
                       /><noscript
                         ><img
                           width="1024"
                           height="683"
-                          src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg"
+                          src="./files/living-room-1024x683.jpg"
                           class="attachment-large size-large"
                           alt="Large Living Room"
                           decoding="async"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room.jpg          1200w
+                            ./files/living-room-1024x683.jpg 1024w,
+                            ./files/living-room-300x200.jpg   300w,
+                            ./files/living-room-768x512.jpg   768w,
+                            ./files/living-room-480x320.jpg   480w,
+                            ./files/living-room.jpg          1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                       /></noscript>
@@ -1751,32 +1491,32 @@
                         class="attachment-large size-large entered lazyloaded"
                         alt="Fully-Equipped Kitchen"
                         decoding="async"
-                        data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen.jpg 1200w"
+                        data-lazy-srcset="./files/kitchen-1024x683.jpg 1024w, ./files/kitchen-300x200.jpg 300w, ./files/kitchen-768x512.jpg 768w, ./files/kitchen-480x320.jpg 480w, ./files/kitchen.jpg 1200w"
                         data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
-                        data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg"
+                        data-lazy-src="./files/kitchen-1024x683.jpg"
                         data-ll-status="loaded"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         srcset="
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg 1024w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-300x200.jpg   300w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-768x512.jpg   768w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg   480w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen.jpg          1200w
+                          ./files/kitchen-1024x683.jpg 1024w,
+                          ./files/kitchen-300x200.jpg   300w,
+                          ./files/kitchen-768x512.jpg   768w,
+                          ./files/kitchen-480x320.jpg   480w,
+                          ./files/kitchen.jpg          1200w
                         "
                       /><noscript
                         ><img
                           width="1024"
                           height="683"
-                          src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg"
+                          src="./files/kitchen-1024x683.jpg"
                           class="attachment-large size-large"
                           alt="Fully-Equipped Kitchen"
                           decoding="async"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen.jpg          1200w
+                            ./files/kitchen-1024x683.jpg 1024w,
+                            ./files/kitchen-300x200.jpg   300w,
+                            ./files/kitchen-768x512.jpg   768w,
+                            ./files/kitchen-480x320.jpg   480w,
+                            ./files/kitchen.jpg          1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                       /></noscript>
@@ -1810,32 +1550,32 @@
                         class="attachment-large size-large entered lazyloaded"
                         alt="Separate Dining"
                         decoding="async"
-                        data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining.jpg 1200w"
+                        data-lazy-srcset="./files/dining-1024x683.jpg 1024w, ./files/dining-300x200.jpg 300w, ./files/dining-768x512.jpg 768w, ./files/dining-480x320.jpg 480w, ./files/dining.jpg 1200w"
                         data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
-                        data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg"
+                        data-lazy-src="./files/dining-1024x683.jpg"
                         data-ll-status="loaded"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         srcset="
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg 1024w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-300x200.jpg   300w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-768x512.jpg   768w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg   480w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining.jpg          1200w
+                          ./files/dining-1024x683.jpg 1024w,
+                          ./files/dining-300x200.jpg   300w,
+                          ./files/dining-768x512.jpg   768w,
+                          ./files/dining-480x320.jpg   480w,
+                          ./files/dining.jpg          1200w
                         "
                       /><noscript
                         ><img
                           width="1024"
                           height="683"
-                          src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg"
+                          src="./files/dining-1024x683.jpg"
                           class="attachment-large size-large"
                           alt="Separate Dining"
                           decoding="async"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining.jpg          1200w
+                            ./files/dining-1024x683.jpg 1024w,
+                            ./files/dining-300x200.jpg   300w,
+                            ./files/dining-768x512.jpg   768w,
+                            ./files/dining-480x320.jpg   480w,
+                            ./files/dining.jpg          1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                       /></noscript>
@@ -1869,32 +1609,32 @@
                         class="attachment-large size-large entered lazyloaded"
                         alt="Spacious Bedrooms"
                         decoding="async"
-                        data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2.jpg 1200w"
+                        data-lazy-srcset="./files/bedroom2-1024x683.jpg 1024w, ./files/bedroom2-300x200.jpg 300w, ./files/bedroom2-768x512.jpg 768w, ./files/bedroom2-480x320.jpg 480w, ./files/bedroom2.jpg 1200w"
                         data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
-                        data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg"
+                        data-lazy-src="./files/bedroom2-1024x683.jpg"
                         data-ll-status="loaded"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         srcset="
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg 1024w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-300x200.jpg   300w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-768x512.jpg   768w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg   480w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2.jpg          1200w
+                          ./files/bedroom2-1024x683.jpg 1024w,
+                          ./files/bedroom2-300x200.jpg   300w,
+                          ./files/bedroom2-768x512.jpg   768w,
+                          ./files/bedroom2-480x320.jpg   480w,
+                          ./files/bedroom2.jpg          1200w
                         "
                       /><noscript
                         ><img
                           width="1024"
                           height="683"
-                          src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg"
+                          src="./files/bedroom2-1024x683.jpg"
                           class="attachment-large size-large"
                           alt="Spacious Bedrooms"
                           decoding="async"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2.jpg          1200w
+                            ./files/bedroom2-1024x683.jpg 1024w,
+                            ./files/bedroom2-300x200.jpg   300w,
+                            ./files/bedroom2-768x512.jpg   768w,
+                            ./files/bedroom2-480x320.jpg   480w,
+                            ./files/bedroom2.jpg          1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                       /></noscript>
@@ -1927,32 +1667,32 @@
                         class="attachment-large size-large entered lazyloaded"
                         alt="Room to Groom"
                         decoding="async"
-                        data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom.jpg 1200w"
+                        data-lazy-srcset="./files/bathroom-1024x683.jpg 1024w, ./files/bathroom-300x200.jpg 300w, ./files/bathroom-768x512.jpg 768w, ./files/bathroom-480x320.jpg 480w, ./files/bathroom.jpg 1200w"
                         data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
-                        data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg"
+                        data-lazy-src="./files/bathroom-1024x683.jpg"
                         data-ll-status="loaded"
                         sizes="(max-width: 1024px) 100vw, 1024px"
                         srcset="
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg 1024w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-300x200.jpg   300w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-768x512.jpg   768w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg   480w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom.jpg          1200w
+                          ./files/bathroom-1024x683.jpg 1024w,
+                          ./files/bathroom-300x200.jpg   300w,
+                          ./files/bathroom-768x512.jpg   768w,
+                          ./files/bathroom-480x320.jpg   480w,
+                          ./files/bathroom.jpg          1200w
                         "
                       /><noscript
                         ><img
                           width="1024"
                           height="683"
-                          src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg"
+                          src="./files/bathroom-1024x683.jpg"
                           class="attachment-large size-large"
                           alt="Room to Groom"
                           decoding="async"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom.jpg          1200w
+                            ./files/bathroom-1024x683.jpg 1024w,
+                            ./files/bathroom-300x200.jpg   300w,
+                            ./files/bathroom-768x512.jpg   768w,
+                            ./files/bathroom-480x320.jpg   480w,
+                            ./files/bathroom.jpg          1200w
                           "
                           sizes="(max-width: 1024px) 100vw, 1024px"
                       /></noscript>
@@ -2034,7 +1774,7 @@
                         >
                       </p>
                       <a
-                        href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1.jpg"
+                        href="./files/Parkview_1x1.jpg"
                         rel="lightbox[fp]"
                         ><img
                           width="427"
@@ -2044,32 +1784,32 @@
                           alt="1 Bed / 1 Bath / 650 sq ft / Availability: Please Call / Deposit: $300 / Rent: $815"
                           style=""
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-427x320.jpg 427w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-300x225.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-1024x768.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-768x576.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1.jpg 1280w"
+                          data-lazy-srcset="./files/Parkview_1x1-427x320.jpg 427w, ./files/Parkview_1x1-300x225.jpg 300w, ./files/Parkview_1x1-1024x768.jpg 1024w, ./files/Parkview_1x1-768x576.jpg 768w, ./files/Parkview_1x1.jpg 1280w"
                           data-lazy-sizes="(max-width: 427px) 100vw, 427px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-427x320.jpg"
+                          data-lazy-src="./files/Parkview_1x1-427x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 427px) 100vw, 427px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-427x320.jpg   427w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-300x225.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-1024x768.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-768x576.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1.jpg          1280w
+                            ./files/Parkview_1x1-427x320.jpg   427w,
+                            ./files/Parkview_1x1-300x225.jpg   300w,
+                            ./files/Parkview_1x1-1024x768.jpg 1024w,
+                            ./files/Parkview_1x1-768x576.jpg   768w,
+                            ./files/Parkview_1x1.jpg          1280w
                           " /><noscript
                           ><img
                             width="427"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-427x320.jpg"
+                            src="./files/Parkview_1x1-427x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                             alt="1 Bed / 1 Bath / 650 sq ft / Availability: Please Call / Deposit: $300 / Rent: $815"
                             style=""
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-427x320.jpg   427w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-300x225.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-1024x768.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1-768x576.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_1x1.jpg          1280w
+                              ./files/Parkview_1x1-427x320.jpg   427w,
+                              ./files/Parkview_1x1-300x225.jpg   300w,
+                              ./files/Parkview_1x1-1024x768.jpg 1024w,
+                              ./files/Parkview_1x1-768x576.jpg   768w,
+                              ./files/Parkview_1x1.jpg          1280w
                             "
                             sizes="(max-width: 427px) 100vw, 427px" /></noscript
                       ></a>
@@ -2123,7 +1863,7 @@
                         >
                       </p>
                       <a
-                        href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_2x2.jpg"
+                        href="./files/Parkview_2x2.jpg"
                         rel="lightbox[fp]"
                         ><img
                           width="427"
@@ -2134,11 +1874,11 @@
                           style=""
                           decoding="async"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_2x2-427x320.jpg   427w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_2x2-300x225.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_2x2-1024x768.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_2x2-768x576.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/Parkview_2x2.jpg          1280w
+                            ./files/Parkview_2x2-427x320.jpg   427w,
+                            ./files/Parkview_2x2-300x225.jpg   300w,
+                            ./files/Parkview_2x2-1024x768.jpg 1024w,
+                            ./files/Parkview_2x2-768x576.jpg   768w,
+                            ./files/Parkview_2x2.jpg          1280w
                           "
                           sizes="(max-width: 427px) 100vw, 427px"
                       /></a>
@@ -2221,7 +1961,7 @@
                   <figure class="gallery-item">
                     <div class="gallery-icon landscape">
                       <a
-                        href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-1024x683.jpg"
+                        href="./files/exterior2-1024x683.jpg"
                         rel="lightbox"
                         aria-label="Photo Gallery"
                         ><img
@@ -2231,32 +1971,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Welcome!"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2.jpg 1200w"
+                          data-lazy-srcset="./files/exterior2-480x320.jpg 480w, ./files/exterior2-300x200.jpg 300w, ./files/exterior2-1024x683.jpg 1024w, ./files/exterior2-768x512.jpg 768w, ./files/exterior2.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-480x320.jpg"
+                          data-lazy-src="./files/exterior2-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2.jpg          1200w
+                            ./files/exterior2-480x320.jpg   480w,
+                            ./files/exterior2-300x200.jpg   300w,
+                            ./files/exterior2-1024x683.jpg 1024w,
+                            ./files/exterior2-768x512.jpg   768w,
+                            ./files/exterior2.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-480x320.jpg"
+                            src="./files/exterior2-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Welcome!"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior2.jpg          1200w
+                              ./files/exterior2-480x320.jpg   480w,
+                              ./files/exterior2-300x200.jpg   300w,
+                              ./files/exterior2-1024x683.jpg 1024w,
+                              ./files/exterior2-768x512.jpg   768w,
+                              ./files/exterior2.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2270,7 +2010,7 @@
                   <figure class="gallery-item">
                     <div class="gallery-icon landscape">
                       <a
-                        href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-1024x683.jpg"
+                        href="./files/exterior-1024x683.jpg"
                         rel="lightbox"
                         aria-label="Photo Gallery"
                         ><img
@@ -2280,32 +2020,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Plenty of Parking"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior.jpg 1200w"
+                          data-lazy-srcset="./files/exterior-480x320.jpg 480w, ./files/exterior-300x200.jpg 300w, ./files/exterior-1024x683.jpg 1024w, ./files/exterior-768x512.jpg 768w, ./files/exterior.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-480x320.jpg"
+                          data-lazy-src="./files/exterior-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior.jpg          1200w
+                            ./files/exterior-480x320.jpg   480w,
+                            ./files/exterior-300x200.jpg   300w,
+                            ./files/exterior-1024x683.jpg 1024w,
+                            ./files/exterior-768x512.jpg   768w,
+                            ./files/exterior.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-480x320.jpg"
+                            src="./files/exterior-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Plenty of Parking"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/exterior.jpg          1200w
+                              ./files/exterior-480x320.jpg   480w,
+                              ./files/exterior-300x200.jpg   300w,
+                              ./files/exterior-1024x683.jpg 1024w,
+                              ./files/exterior-768x512.jpg   768w,
+                              ./files/exterior.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2331,32 +2071,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Large Living Room"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room.jpg 1200w"
+                          data-lazy-srcset="./files/living-room-480x320.jpg 480w, ./files/living-room-300x200.jpg 300w, ./files/living-room-1024x683.jpg 1024w, ./files/living-room-768x512.jpg 768w, ./files/living-room.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg"
+                          data-lazy-src="./files/living-room-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room.jpg          1200w
+                            ./files/living-room-480x320.jpg   480w,
+                            ./files/living-room-300x200.jpg   300w,
+                            ./files/living-room-1024x683.jpg 1024w,
+                            ./files/living-room-768x512.jpg   768w,
+                            ./files/living-room.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg"
+                            src="./files/living-room-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Large Living Room"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room.jpg          1200w
+                              ./files/living-room-480x320.jpg   480w,
+                              ./files/living-room-300x200.jpg   300w,
+                              ./files/living-room-1024x683.jpg 1024w,
+                              ./files/living-room-768x512.jpg   768w,
+                              ./files/living-room.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2372,7 +2112,7 @@
                   <figure class="gallery-item">
                     <div class="gallery-icon landscape">
                       <a
-                        href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-1024x683.jpg"
+                        href="./files/living-room2-1024x683.jpg"
                         rel="lightbox"
                         aria-label="Photo Gallery"
                         ><img
@@ -2382,32 +2122,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Room to Entertain"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2.jpg 1200w"
+                          data-lazy-srcset="./files/living-room2-480x320.jpg 480w, ./files/living-room2-300x200.jpg 300w, ./files/living-room2-1024x683.jpg 1024w, ./files/living-room2-768x512.jpg 768w, ./files/living-room2.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-480x320.jpg"
+                          data-lazy-src="./files/living-room2-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2.jpg          1200w
+                            ./files/living-room2-480x320.jpg   480w,
+                            ./files/living-room2-300x200.jpg   300w,
+                            ./files/living-room2-1024x683.jpg 1024w,
+                            ./files/living-room2-768x512.jpg   768w,
+                            ./files/living-room2.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-480x320.jpg"
+                            src="./files/living-room2-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Room to Entertain"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/living-room2.jpg          1200w
+                              ./files/living-room2-480x320.jpg   480w,
+                              ./files/living-room2-300x200.jpg   300w,
+                              ./files/living-room2-1024x683.jpg 1024w,
+                              ./files/living-room2-768x512.jpg   768w,
+                              ./files/living-room2.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2433,32 +2173,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Fully-Equipped Kitchen"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen.jpg 1200w"
+                          data-lazy-srcset="./files/kitchen-480x320.jpg 480w, ./files/kitchen-300x200.jpg 300w, ./files/kitchen-1024x683.jpg 1024w, ./files/kitchen-768x512.jpg 768w, ./files/kitchen.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg"
+                          data-lazy-src="./files/kitchen-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen.jpg          1200w
+                            ./files/kitchen-480x320.jpg   480w,
+                            ./files/kitchen-300x200.jpg   300w,
+                            ./files/kitchen-1024x683.jpg 1024w,
+                            ./files/kitchen-768x512.jpg   768w,
+                            ./files/kitchen.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg"
+                            src="./files/kitchen-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Fully-Equipped Kitchen"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen.jpg          1200w
+                              ./files/kitchen-480x320.jpg   480w,
+                              ./files/kitchen-300x200.jpg   300w,
+                              ./files/kitchen-1024x683.jpg 1024w,
+                              ./files/kitchen-768x512.jpg   768w,
+                              ./files/kitchen.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2474,7 +2214,7 @@
                   <figure class="gallery-item">
                     <div class="gallery-icon landscape">
                       <a
-                        href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-1024x683.jpg"
+                        href="./files/kitchen2-1024x683.jpg"
                         rel="lightbox"
                         aria-label="Photo Gallery"
                         ><img
@@ -2484,32 +2224,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Space to Cook"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2.jpg 1200w"
+                          data-lazy-srcset="./files/kitchen2-480x320.jpg 480w, ./files/kitchen2-300x200.jpg 300w, ./files/kitchen2-1024x683.jpg 1024w, ./files/kitchen2-768x512.jpg 768w, ./files/kitchen2.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-480x320.jpg"
+                          data-lazy-src="./files/kitchen2-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2.jpg          1200w
+                            ./files/kitchen2-480x320.jpg   480w,
+                            ./files/kitchen2-300x200.jpg   300w,
+                            ./files/kitchen2-1024x683.jpg 1024w,
+                            ./files/kitchen2-768x512.jpg   768w,
+                            ./files/kitchen2.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-480x320.jpg"
+                            src="./files/kitchen2-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Space to Cook"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen2.jpg          1200w
+                              ./files/kitchen2-480x320.jpg   480w,
+                              ./files/kitchen2-300x200.jpg   300w,
+                              ./files/kitchen2-1024x683.jpg 1024w,
+                              ./files/kitchen2-768x512.jpg   768w,
+                              ./files/kitchen2.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2523,7 +2263,7 @@
                   <figure class="gallery-item">
                     <div class="gallery-icon landscape">
                       <a
-                        href="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-1024x683.jpg"
+                        href="./files/kitchen3-1024x683.jpg"
                         rel="lightbox"
                         aria-label="Photo Gallery"
                         ><img
@@ -2533,32 +2273,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Breakfast Bar"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3.jpg 1200w"
+                          data-lazy-srcset="./files/kitchen3-480x320.jpg 480w, ./files/kitchen3-300x200.jpg 300w, ./files/kitchen3-1024x683.jpg 1024w, ./files/kitchen3-768x512.jpg 768w, ./files/kitchen3.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-480x320.jpg"
+                          data-lazy-src="./files/kitchen3-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3.jpg          1200w
+                            ./files/kitchen3-480x320.jpg   480w,
+                            ./files/kitchen3-300x200.jpg   300w,
+                            ./files/kitchen3-1024x683.jpg 1024w,
+                            ./files/kitchen3-768x512.jpg   768w,
+                            ./files/kitchen3.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-480x320.jpg"
+                            src="./files/kitchen3-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Breakfast Bar"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/kitchen3.jpg          1200w
+                              ./files/kitchen3-480x320.jpg   480w,
+                              ./files/kitchen3-300x200.jpg   300w,
+                              ./files/kitchen3-1024x683.jpg 1024w,
+                              ./files/kitchen3-768x512.jpg   768w,
+                              ./files/kitchen3.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2582,32 +2322,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Separate Dining"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining.jpg 1200w"
+                          data-lazy-srcset="./files/dining-480x320.jpg 480w, ./files/dining-300x200.jpg 300w, ./files/dining-1024x683.jpg 1024w, ./files/dining-768x512.jpg 768w, ./files/dining.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg"
+                          data-lazy-src="./files/dining-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining.jpg          1200w
+                            ./files/dining-480x320.jpg   480w,
+                            ./files/dining-300x200.jpg   300w,
+                            ./files/dining-1024x683.jpg 1024w,
+                            ./files/dining-768x512.jpg   768w,
+                            ./files/dining.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg"
+                            src="./files/dining-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Separate Dining"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/dining.jpg          1200w
+                              ./files/dining-480x320.jpg   480w,
+                              ./files/dining-300x200.jpg   300w,
+                              ./files/dining-1024x683.jpg 1024w,
+                              ./files/dining-768x512.jpg   768w,
+                              ./files/dining.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2631,32 +2371,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Spacious Bedrooms"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2.jpg 1200w"
+                          data-lazy-srcset="./files/bedroom2-480x320.jpg 480w, ./files/bedroom2-300x200.jpg 300w, ./files/bedroom2-1024x683.jpg 1024w, ./files/bedroom2-768x512.jpg 768w, ./files/bedroom2.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg"
+                          data-lazy-src="./files/bedroom2-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2.jpg          1200w
+                            ./files/bedroom2-480x320.jpg   480w,
+                            ./files/bedroom2-300x200.jpg   300w,
+                            ./files/bedroom2-1024x683.jpg 1024w,
+                            ./files/bedroom2-768x512.jpg   768w,
+                            ./files/bedroom2.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg"
+                            src="./files/bedroom2-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Spacious Bedrooms"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bedroom2.jpg          1200w
+                              ./files/bedroom2-480x320.jpg   480w,
+                              ./files/bedroom2-300x200.jpg   300w,
+                              ./files/bedroom2-1024x683.jpg 1024w,
+                              ./files/bedroom2-768x512.jpg   768w,
+                              ./files/bedroom2.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2682,32 +2422,32 @@
                           class="attachment-post-thumbnail size-post-thumbnail entered lazyloaded"
                           alt="Room to Groom"
                           decoding="async"
-                          data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom.jpg 1200w"
+                          data-lazy-srcset="./files/bathroom-480x320.jpg 480w, ./files/bathroom-300x200.jpg 300w, ./files/bathroom-1024x683.jpg 1024w, ./files/bathroom-768x512.jpg 768w, ./files/bathroom.jpg 1200w"
                           data-lazy-sizes="(max-width: 480px) 100vw, 480px"
-                          data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg"
+                          data-lazy-src="./files/bathroom-480x320.jpg"
                           data-ll-status="loaded"
                           sizes="(max-width: 480px) 100vw, 480px"
                           srcset="
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg   480w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-300x200.jpg   300w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg 1024w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-768x512.jpg   768w,
-                            https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom.jpg          1200w
+                            ./files/bathroom-480x320.jpg   480w,
+                            ./files/bathroom-300x200.jpg   300w,
+                            ./files/bathroom-1024x683.jpg 1024w,
+                            ./files/bathroom-768x512.jpg   768w,
+                            ./files/bathroom.jpg          1200w
                           "
                         /><noscript
                           ><img
                             width="480"
                             height="320"
-                            src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg"
+                            src="./files/bathroom-480x320.jpg"
                             class="attachment-post-thumbnail size-post-thumbnail"
                             alt="Room to Groom"
                             decoding="async"
                             srcset="
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-480x320.jpg   480w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-300x200.jpg   300w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-1024x683.jpg 1024w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom-768x512.jpg   768w,
-                              https://www.parkviewlincoln.com/wp-content/uploads/2022/02/bathroom.jpg          1200w
+                              ./files/bathroom-480x320.jpg   480w,
+                              ./files/bathroom-300x200.jpg   300w,
+                              ./files/bathroom-1024x683.jpg 1024w,
+                              ./files/bathroom-768x512.jpg   768w,
+                              ./files/bathroom.jpg          1200w
                             "
                             sizes="(max-width: 480px) 100vw, 480px"
                         /></noscript>
@@ -2731,9 +2471,9 @@
             <div id="map_image_wrap">
               <div
                 class="map-image"
-                data-src-desktop="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/map.jpg"
-                data-src-tablet="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/map-tablet.jpg"
-                data-src-mobile="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/map-mobile.jpg"
+                data-src-desktop="./files/map.jpg"
+                data-src-tablet="./files/map-tablet.jpg"
+                data-src-mobile="./files/map-mobile.jpg"
               >
                 <a
                   href="https://www.parkviewlincoln.com/nearby/"
@@ -2779,7 +2519,7 @@
                   class="wp-caption aligncenter"
                 >
                   <a
-                    href="https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2.pdf"
+                    href="./files/Parkview-Apartments-site-map2.pdf"
                     target="_blank"
                     rel="noopener"
                     ><img
@@ -2790,34 +2530,34 @@
                       alt="Parkview Apartments site map"
                       width="300"
                       height="232"
-                      data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-300x232.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-1024x791.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-768x594.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-1536x1187.jpg 1536w, https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-414x320.jpg 414w, https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2.jpg 1651w"
+                      data-lazy-srcset="./files/Parkview-Apartments-site-map2-300x232.jpg 300w, ./files/Parkview-Apartments-site-map2-1024x791.jpg 1024w, ./files/Parkview-Apartments-site-map2-768x594.jpg 768w, ./files/Parkview-Apartments-site-map2-1536x1187.jpg 1536w, ./files/Parkview-Apartments-site-map2-414x320.jpg 414w, ./files/Parkview-Apartments-site-map2.jpg 1651w"
                       data-lazy-sizes="(max-width: 300px) 100vw, 300px"
-                      data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-300x232.jpg"
+                      data-lazy-src="./files/Parkview-Apartments-site-map2-300x232.jpg"
                       data-ll-status="loaded"
                       sizes="(max-width: 300px) 100vw, 300px"
                       srcset="
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-300x232.jpg    300w,
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-1024x791.jpg  1024w,
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-768x594.jpg    768w,
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-1536x1187.jpg 1536w,
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-414x320.jpg    414w,
-                        https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2.jpg           1651w
+                        ./files/Parkview-Apartments-site-map2-300x232.jpg    300w,
+                        ./files/Parkview-Apartments-site-map2-1024x791.jpg  1024w,
+                        ./files/Parkview-Apartments-site-map2-768x594.jpg    768w,
+                        ./files/Parkview-Apartments-site-map2-1536x1187.jpg 1536w,
+                        ./files/Parkview-Apartments-site-map2-414x320.jpg    414w,
+                        ./files/Parkview-Apartments-site-map2.jpg           1651w
                       " /><noscript
                       ><img
                         fetchpriority="high"
                         decoding="async"
                         class="wp-image-709 size-medium"
-                        src="https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-300x232.jpg"
+                        src="./files/Parkview-Apartments-site-map2-300x232.jpg"
                         alt="Parkview Apartments site map"
                         width="300"
                         height="232"
                         srcset="
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-300x232.jpg    300w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-1024x791.jpg  1024w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-768x594.jpg    768w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-1536x1187.jpg 1536w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2-414x320.jpg    414w,
-                          https://www.parkviewlincoln.com/wp-content/uploads/2022/03/Parkview-Apartments-site-map2.jpg           1651w
+                          ./files/Parkview-Apartments-site-map2-300x232.jpg    300w,
+                          ./files/Parkview-Apartments-site-map2-1024x791.jpg  1024w,
+                          ./files/Parkview-Apartments-site-map2-768x594.jpg    768w,
+                          ./files/Parkview-Apartments-site-map2-1536x1187.jpg 1536w,
+                          ./files/Parkview-Apartments-site-map2-414x320.jpg    414w,
+                          ./files/Parkview-Apartments-site-map2.jpg           1651w
                         "
                         sizes="(max-width: 300px) 100vw, 300px" /></noscript
                   ></a>
@@ -3022,32 +2762,32 @@
                   class="attachment-large size-large entered lazyloaded"
                   alt="woman on computer"
                   decoding="async"
-                  data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac.jpg 1200w"
+                  data-lazy-srcset="./files/woman-on-couch-with-a-mac-1024x683.jpg 1024w, ./files/woman-on-couch-with-a-mac-300x200.jpg 300w, ./files/woman-on-couch-with-a-mac-768x512.jpg 768w, ./files/woman-on-couch-with-a-mac-480x320.jpg 480w, ./files/woman-on-couch-with-a-mac.jpg 1200w"
                   data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
-                  data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-1024x683.jpg"
+                  data-lazy-src="./files/woman-on-couch-with-a-mac-1024x683.jpg"
                   data-ll-status="loaded"
                   sizes="(max-width: 1024px) 100vw, 1024px"
                   srcset="
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-1024x683.jpg 1024w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-300x200.jpg   300w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-768x512.jpg   768w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-480x320.jpg   480w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac.jpg          1200w
+                    ./files/woman-on-couch-with-a-mac-1024x683.jpg 1024w,
+                    ./files/woman-on-couch-with-a-mac-300x200.jpg   300w,
+                    ./files/woman-on-couch-with-a-mac-768x512.jpg   768w,
+                    ./files/woman-on-couch-with-a-mac-480x320.jpg   480w,
+                    ./files/woman-on-couch-with-a-mac.jpg          1200w
                   "
                 /><noscript
                   ><img
                     width="1024"
                     height="683"
-                    src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-1024x683.jpg"
+                    src="./files/woman-on-couch-with-a-mac-1024x683.jpg"
                     class="attachment-large size-large"
                     alt="woman on computer"
                     decoding="async"
                     srcset="
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-1024x683.jpg 1024w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-300x200.jpg   300w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-768x512.jpg   768w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac-480x320.jpg   480w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/woman-on-couch-with-a-mac.jpg          1200w
+                      ./files/woman-on-couch-with-a-mac-1024x683.jpg 1024w,
+                      ./files/woman-on-couch-with-a-mac-300x200.jpg   300w,
+                      ./files/woman-on-couch-with-a-mac-768x512.jpg   768w,
+                      ./files/woman-on-couch-with-a-mac-480x320.jpg   480w,
+                      ./files/woman-on-couch-with-a-mac.jpg          1200w
                     "
                     sizes="(max-width: 1024px) 100vw, 1024px"
                 /></noscript>
@@ -3083,32 +2823,32 @@
                   class="attachment-large size-large entered lazyloaded"
                   alt="couple with dog"
                   decoding="async"
-                  data-lazy-srcset="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-1024x683.jpg 1024w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-300x200.jpg 300w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-768x512.jpg 768w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-480x320.jpg 480w, https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog.jpg 1200w"
+                  data-lazy-srcset="./files/couple-reading-in-grass-with-dog-1024x683.jpg 1024w, ./files/couple-reading-in-grass-with-dog-300x200.jpg 300w, ./files/couple-reading-in-grass-with-dog-768x512.jpg 768w, ./files/couple-reading-in-grass-with-dog-480x320.jpg 480w, ./files/couple-reading-in-grass-with-dog.jpg 1200w"
                   data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
-                  data-lazy-src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-1024x683.jpg"
+                  data-lazy-src="./files/couple-reading-in-grass-with-dog-1024x683.jpg"
                   data-ll-status="loaded"
                   sizes="(max-width: 1024px) 100vw, 1024px"
                   srcset="
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-1024x683.jpg 1024w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-300x200.jpg   300w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-768x512.jpg   768w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-480x320.jpg   480w,
-                    https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog.jpg          1200w
+                    ./files/couple-reading-in-grass-with-dog-1024x683.jpg 1024w,
+                    ./files/couple-reading-in-grass-with-dog-300x200.jpg   300w,
+                    ./files/couple-reading-in-grass-with-dog-768x512.jpg   768w,
+                    ./files/couple-reading-in-grass-with-dog-480x320.jpg   480w,
+                    ./files/couple-reading-in-grass-with-dog.jpg          1200w
                   "
                 /><noscript
                   ><img
                     width="1024"
                     height="683"
-                    src="https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-1024x683.jpg"
+                    src="./files/couple-reading-in-grass-with-dog-1024x683.jpg"
                     class="attachment-large size-large"
                     alt="couple with dog"
                     decoding="async"
                     srcset="
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-1024x683.jpg 1024w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-300x200.jpg   300w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-768x512.jpg   768w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog-480x320.jpg   480w,
-                      https://www.parkviewlincoln.com/wp-content/uploads/2022/02/couple-reading-in-grass-with-dog.jpg          1200w
+                      ./files/couple-reading-in-grass-with-dog-1024x683.jpg 1024w,
+                      ./files/couple-reading-in-grass-with-dog-300x200.jpg   300w,
+                      ./files/couple-reading-in-grass-with-dog-768x512.jpg   768w,
+                      ./files/couple-reading-in-grass-with-dog-480x320.jpg   480w,
+                      ./files/couple-reading-in-grass-with-dog.jpg          1200w
                     "
                     sizes="(max-width: 1024px) 100vw, 1024px"
                 /></noscript>
@@ -3220,12 +2960,12 @@
                     alt="Equal Housing Opportunity"
                     width="18"
                     height="20"
-                    data-lazy-src="https://www.parkviewlincoln.com/wp-content/themes/nectar/images/eho-gray.png"
+                    data-lazy-src="./fileseho-gray.png"
                     data-ll-status="loaded"
                     class="entered lazyloaded"
                   /><noscript
                     ><img
-                      src="https://www.parkviewlincoln.com/wp-content/themes/nectar/images/eho-gray.png"
+                      src="./fileseho-gray.png"
                       alt="Equal Housing Opportunity"
                       width="18"
                       height="20"
@@ -3237,12 +2977,12 @@
                     alt="ADA"
                     width="18"
                     height="20"
-                    data-lazy-src="https://www.parkviewlincoln.com/wp-content/themes/nectar/images/ada-gray.png"
+                    data-lazy-src="./filesada-gray.png"
                     data-ll-status="loaded"
                     class="entered lazyloaded"
                   /><noscript
                     ><img
-                      src="https://www.parkviewlincoln.com/wp-content/themes/nectar/images/ada-gray.png"
+                      src="./filesada-gray.png"
                       alt="ADA"
                       width="18"
                       height="20"
